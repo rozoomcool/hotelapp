@@ -17,8 +17,7 @@ class ChipsWrap extends StatelessWidget {
                       e,
                       style: Theme.of(context)
                           .textTheme
-                          .bodyMedium
-                          ?.copyWith(color: const Color(0xFF828796)),
+                          .labelMedium,
                     ),
                     backgroundColor: const Color(0xFFFBFBFC),
                     shape: const RoundedRectangleBorder(

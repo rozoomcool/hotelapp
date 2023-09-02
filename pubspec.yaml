@@ -76,12 +76,14 @@ flutter:
   assets:
     - assets/
     - assets/hotelimage_1.png
-    - assets/hotel_room.png.png
+    - assets/hotel_room.png
     - assets/arrow_right.svg
     - assets/arrow_left.svg
     - assets/emoji-happy.svg
     - assets/close-square.svg
     - assets/tick-square.svg
+    - assets/add.svg
+    - assets/party.png
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:test_task_umatkereev_application/presentation/booking_screen.dart';
 import 'package:test_task_umatkereev_application/presentation/hotel_details_screen.dart';
 import 'package:test_task_umatkereev_application/presentation/hotel_main_screen.dart';
+import 'package:test_task_umatkereev_application/presentation/order_status_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -25,7 +27,20 @@ class MyApp extends StatelessWidget {
               color: Color(0xFF000000),
               fontSize: 16,
               fontFamily: 'SF Pro Display',
+                fontWeight: FontWeight.w400
+            ),
+            labelMedium: const TextStyle(
+                color: Color(0xFF828796),
+                fontSize: 16,
+                fontFamily: 'SF Pro Display',
                 fontWeight: FontWeight.w500
+            ),
+            labelSmall: const TextStyle(
+                color: Color(0xFF828796),
+                fontSize: 14,
+                fontFamily: 'SF Pro Display',
+                fontWeight: FontWeight.w400,
+              letterSpacing: 0.1
             ),
             displayLarge: const TextStyle(
               color: Color(0xFF000000),
@@ -48,7 +63,9 @@ class MyApp extends StatelessWidget {
           )),
       routes: {
         '/': (context) => const HotelMainScreen(),
-        '/hotel_details': (context) => HotelDetailsScreen()
+        '/hotel_details': (context) => const HotelDetailsScreen(),
+        '/booking': (context) => const BookingScreen(),
+        '/order_status': (context) => const OrderStatusScreen()
       },
     );
   }

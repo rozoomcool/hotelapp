@@ -7,9 +7,12 @@ class HotelAboutCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     List<String> titles = ['Удобства', 'Что включено', 'Что не включено'];
-    List<String> leadings = ['assets/emoji-happy.svg', 'assets/tick-square.svg', 'assets/close-square.svg'];
+    List<String> leadings = [
+      'assets/emoji-happy.svg',
+      'assets/tick-square.svg',
+      'assets/close-square.svg'
+    ];
 
     return Container(
       decoration: const BoxDecoration(
@@ -60,7 +63,9 @@ class HotelAboutCard extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyMedium
-                                ?.copyWith(color: const Color(0xFF2c3035))),
+                                ?.copyWith(
+                                    color: const Color(0xFF2c3035),
+                                    fontWeight: FontWeight.w500)),
                         subtitle: Text('Самое необходимое',
                             style: Theme.of(context)
                                 .textTheme

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test_task_umatkereev_application/features/room_card.dart';
 
+import '../features/custom_button.dart';
+
 class HotelDetailsScreen extends StatelessWidget{
   const HotelDetailsScreen({super.key});
 

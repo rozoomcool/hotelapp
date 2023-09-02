@@ -84,7 +84,7 @@ class RoomCard extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 16.0,),
-          CustomButton(label: 'Выбрать номер', onPressed: () {})
+          CustomButton(label: 'Выбрать номер', onPressed: () => Navigator.pushNamed(context, '/booking'))
         ],
       ),
     );
